@@ -1,0 +1,31 @@
+Какие животные не имеют хозяев?
+
+?- animals(X), \+ owner(_,X).
+
+X = spot.
+
+Найдите всех собак и укажите их цвет.
+
+?- dog(X), color(X,C).
+
+X = flash,
+C = spotted ;
+X = rover,
+C = ginger ;
+X = spot,
+C = white.
+
+Укажите всех животных, которыми владеет Том.
+
+?- owner(tom,X).
+
+X = bootsy ;
+X = cortney.
+
+Перечислите всех собак Кейт.
+
+?- owner(kate,X).
+
+X = flash ;
+X = rover ;
+false.
